@@ -155,6 +155,7 @@ function restart(){
     compCard1.cid = "00"
     compCard2.cid ="00"
     cardsPackH1.classList.remove('pop');
+    winmsg.innerText = "TRY YOUR LUCK HARD"
     sum = 0
     compsum =0
 }
