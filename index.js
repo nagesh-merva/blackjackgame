@@ -78,38 +78,47 @@ function selectAceValue(value) {
 function Points(value){
     switch (value) {
         case "1":
-            selectAceValue(value)
             document.getElementById('aceChoiceOverlay').style.display = 'block';
+            userPoint.innerText = sum;
             break;
         case "2":
             sum += 2;
+            userPoint.innerText = sum;
             break;
         case "3":
             sum += 3;
+            userPoint.innerText = sum;
             break;
         case "4":
             sum += 4;
+            userPoint.innerText = sum;
             break;
         case "5":
             sum += 5;
+            userPoint.innerText = sum;
             break;
         case "6":
             sum += 6;
+            userPoint.innerText = sum;
             break;
         case "7":
             sum += 7;
+            userPoint.innerText = sum;
             break;
         case "8":
             sum += 8;
+            userPoint.innerText = sum;
             break;
         case "9":
             sum += 9;
+            userPoint.innerText = sum;
             break;
         case "10":
         case "j":
         case "q":
         case "k":
             sum += 10;
+            userPoint.innerText = sum;
             break;
     }
     return sum;
@@ -155,10 +164,10 @@ function restart(){
     compCard1.cid = "00"
     compCard2.cid ="00"
     cardsPackH1.classList.remove('pop');
+    winmsg.innerText = "TRY YOUR LUCK HARD"
     sum = 0
     compsum =0
 }
-
 
 function getRandomNum(){
     const array = ["1","2","3","4","5","6","7","8","9","10","j","q","k"]
@@ -184,7 +193,7 @@ function draw2(){
     Card2.cid = rndm2
     Card2.style.display ="block"
     Points(rndm2[0]);
-    userPoint.innerText = sum;  
+      
 }
 
 function draw1(){
@@ -192,14 +201,14 @@ function draw1(){
     Card3.cid = rndm3
     Card3.style.display = "block"
     Points(rndm3[0]);
-    userPoint.innerText = sum;
+
 }
 
 
 function CompPoints(value, isFirstCardAce) {
     if (isFirstCardAce) {
         if (compCard2.cid[0] === "1") {
-            compsum = 22;
+            compsum = 13;
         } else {
             compsum = Points(compCard2.cid[0], true);
         }
