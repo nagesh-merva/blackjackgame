@@ -78,7 +78,6 @@ function selectAceValue(value) {
 function Points(value){
     switch (value) {
         case "1":
-            selectAceValue(value)
             document.getElementById('aceChoiceOverlay').style.display = 'block';
             break;
         case "2":
@@ -200,7 +199,7 @@ function draw1(){
 function CompPoints(value, isFirstCardAce) {
     if (isFirstCardAce) {
         if (compCard2.cid[0] === "1") {
-            compsum = 22;
+            compsum = 13;
         } else {
             compsum = Points(compCard2.cid[0], true);
         }
