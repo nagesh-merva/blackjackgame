@@ -42,7 +42,7 @@ h1 {
     height: 80px;
 }
 
-.comp-card{
+.comp-card {
     justify-self: right;
     padding-top: 10px;
     width: 80px;
@@ -83,7 +83,7 @@ img {
     display: none;
 }
 
-.card{
+.card {
     padding-top: 150px;
     min-width: 20px;
     min-height: 24px;
@@ -92,11 +92,13 @@ img {
     display: flex;
 }
 
-#Card1,#comp-Card1{
-    transform:translate(70px, 5px) rotate(-15deg);
+#Card1,
+#comp-Card1 {
+    transform: translate(70px, 5px) rotate(-15deg);
 }
 
-#Card2,#comp-Card2{
+#Card2,
+#comp-Card2 {
     transform: rotate(10deg);
 }
 

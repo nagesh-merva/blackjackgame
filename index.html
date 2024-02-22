@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>black jack game </title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+
+<body class="bg-green-100">
     <div class="main">
         <h1>Black Jack Game </h1>
     </div>
     <div id="display">
         <div class="holded-cards">
             <div class="card">
-                <card-t id="Card1" cid="kh" ></card-t>
+                <card-t id="Card1" cid="kh"></card-t>
                 <card-t id="Card2" cid="kh"></card-t>
                 <card-t id="Card3" cid="kh"></card-t>
             </div>
@@ -25,6 +27,7 @@
             <button id="draw-btn" onclick="DrawOneCard()"><strong>Hit a Card</strong></button>
             <button id="stand-btn" onclick="Stand()"><strong>Stand !</strong></button>
             <button id="restart-btn" onclick="restart()"><strong>RESTART</strong></button>
+            <button id="mendicot-btn"><strong><a href="./mendicoat.html">Mendicot</a></strong></button>
         </div>
         <div class="comp-card">
             <div class="card">
@@ -63,4 +66,5 @@
     <script src="elements.cardmeister.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
